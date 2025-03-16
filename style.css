@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+
+}
+#header{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 80px ;
+  background-color: #E3E6F3;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: sticky;
+  top:0;
+
+}
+.navbar a{
+  position: relative;
+  text-decoration:none;
+  margin: 0px 10px;
+  color: rgba(0, 0, 0, 0.719);
+  font-size: 14px;
+  font-weight: 600 ;
+  transition: font-size 0.3s ease-in 0s;
+  
+}
+.navbar a:hover,.navbar a.active
+{
+    color:#088178;
+    font-size: 15px;
+}
+.navbar a.active::after,
+.navbar a:hover::after{
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -3px;
+  left: 2px;
+}
+
+#hero{
+    background-image: url(hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    
+}
+#hero .box{
+  padding: 160px 70px;
+}
+.box h4{
+  margin-bottom:15px;
+}
+.box h1{
+  color: rgb(22, 163, 102);
+}
+.box button{
+  background-image: url(button.png);
+  border: 0;
+  background-color: transparent;
+  color: rgba(67, 163, 22, 0.8);
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+#feature .fe-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 35px rgba(0,0,0,0.03);
+  border:1px solid #cce7d0;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+#feature{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(78,62,221,0.3); 
+}
+#feature .fe-box img{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.section-p1 .fe-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  background-color: pink;
+  color: #088178;
+}
+.section-p1 .fe-box:nth-of-type(2) h6{
+  background-color: #cdebbc;
+}
+.section-p1 .fe-box:nth-of-type(3) h6{
+  background-color: #d1ef82;
+}
+.section-p1 .fe-box:nth-of-type(4) h6{
+  background-color: #cdd4f8;
+}
+.section-p1 .fe-box:nth-of-type(5) h6{
+  background-color: #f6dbf6;
+}
+.section-p1 .fe-box:nth-of-type(6) h6{
+  background-color: #ffe5e5e3;
+}
+#product1 {
+  text-align: center;
+}
+#product1 .pro{
+  width:250px;
+  border-radius: 20px;
+  border:2px solid #cce7d0;
+  padding: 10px 12px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+  margin: 15px 0px;
+  transition: box-shadow 0.3s ease 0s;
+}
+#product1 .pro-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top:15px ;
+
+}
+#product1 .pro img{
+  width:100%;
+  border-radius: 10px;
+}
+#product1 .pro:hover{
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.16);
+}
+.pro-container .des{
+  text-align: start;
+  padding: 10px 0;
+}
+.pro-container .des #adidas{
+  color:#606063 ;
+  font-size: 12px;
+}
+.pro-container .des h5{
+  padding-top:8px ;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+.pro-container .des i{
+  font-size: 12px;
+  color: rgba(255, 200, 0, 0.594);
+}
+.pro-container .des h4{
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+#product1 .pro-container a i{
+  
+  width: 40px;
+  height: 40px;
+  border: 2px solid #cce7d0;
+  border-radius: 50%;
+  background-color: #e8f6ea;
+  line-height: 2;
+  color:#088178 ;
+  font-size:20px ;
+}
+#banner{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(b2.jpg);
+  height: 280px;
+}
+#banner p a{
+  text-decoration: none;
+  color:#000;
+  background-color: #fff;
+  border:none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+#banner p a:hover{
+  font-weight: 600;
+  background-color: #088178;
+}
+#banner h4{
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+#banner h2{
+  color: #fff;
+  font-size: 40px;
+}
+#sm-banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(b17.jpg);
+  width: 520px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  padding: 35px;
+}
+.banner-box h4{
+  color: #fff;
+  padding-bottom:15px ;
+  font-weight: 600;
+}
+.banner-box h2{
+  color: #fff;
+  
+  font-weight: 600;
+}
+.banner-box span{
+  color: #fff;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+.banner-box button{
+  color: #fff;
+  border-color: white;
+  background-color: transparent;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.banner-box button:hover{
+  background-color:#088178;
+  border: 1px solid #088178;
+}
+#sm-banner .box2{
+  background-image: url(b10.jpg);
+}
+#banner3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 80px;
+  flex-wrap: wrap;
+}
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(b7.jpg);
+  width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#banner3 .box4{
+  background-image: url(b4.jpg);
+}
+#banner3 .box5{
+  background-image: url(b18.jpg);
+}
+#banner3 h3{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500px;
+}
+#banner3 h6{
+  color: red;
+  font-weight: 500px;
+  margin-top: 10px;
+}
+
+#signup{
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 80px 0px;
+  background-image: url(b14.png);
+  background-size: cover;
+  background-color: #041e42;
+}
+#signup .offer h3{
+  color: #fff;
+  font-weight: 600;
+}
+#signup .offer p{
+  font-weight: 500;
+  color: #ffffff94;
+}
+#signup .offer p span{
+  color: rgba(255, 255, 0, 0.764);
+}
+#signup .input{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+
+}
+#signup .input #email{
+  padding: 10px 0px 10px 10px;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#signup .input button{
+  padding: 10px 15px;
+  background-color: #088178;
+  border-color: transparent;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+}
+
+.section-p2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-p2 .col h4{
+  font-size: 15px;
+  font-weight: 800;
+  padding-top:10px ;
+}
+.col p span{
+  font-weight: 900;
+  font-size: 12px;
+}
+.col p{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.section-p2 .col1 p{
+  cursor: pointer;
+}
+.section-p2 .col i{
+  margin: 20px 3px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.section-p2 .col i:hover{
+  opacity: 1;
+  transform: scale(20px);
+  font-weight: 900;
+}
+.col .img img{
+  border: 2px solid #088179b9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.col .img img:hover{
+  box-shadow: 5px 5px 10px #0000007c;
+}
+
+
